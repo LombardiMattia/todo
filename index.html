@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--REF FOGLIO DI STILE-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--API FONTAWERSOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>TODO LIST</title>
+  </head>
+  <body>
+    <!--BOX GENERALE-->
+    <div id="container-generale">
+      <!--LATO SINISTRO-->
+
+      <div id="lato-sx">
+        <div class="tools" id="tool-sx">
+          <div class="chip">
+            <span id="filter"
+              ><i class="fa-regular fa-window-restore"></i
+            ></span>
+          </div>
+        </div>
+        <div class="box" id="giorno">
+          <div id="lato-1">
+            <i class="fa-regular fa-calendar"></i>
+            Oggi
+          </div>
+          <div id="lato-2"></div>
+        </div>
+
+        <h2>Filtri</h2>
+        <div id="filter-list">
+          <div class="box" id="tutti">
+            <div class="box-sx"><i class="fa-solid fa-inbox"></i>TUTTI</div>
+            <div class="box-dx" id="n-TUTTI">0</div>
+          </div>
+          <div class="box" id="attivi">
+            <div class="box-sx"><i class="fa-solid fa-flag"></i>ATTIVI</div>
+            <div class="box-dx" id="n-ATTIVI">0</div>
+          </div>
+          <div class="box" id="checked">
+            <div class="box-sx">
+              <i class="fa-solid fa-check"></i>COMPLETATI
+            </div>
+            <div class="box-dx" id="n-COMPLETATI">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="lato-dx">
+        <!--TOOLS-->
+        <div class="tools">
+          <div class="chip">
+            <span id="aggiungi">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </div>
+        </div>
+
+        <!--INTESTAZIONE-->
+        <div id="intestazione">
+          <h1 id="filtro-selezionato">INTESTAZIONE FILTRO</h1>
+          <p id="Reseconto">Totali inseriti: 0</p>
+        </div>
+
+        <!--TODOS-->
+        <div id="sezione-todos"></div>
+
+        <!--AGGIUNTA-->
+        <div id="sezione-modifica">
+          <div id="TODO" class="todo-box">
+            <span class="modf-sx">
+              <span class="circle-complete"></span>
+            </span>
+            <span class="modf-dx">
+              <input
+                type="text"
+                placeholder="Titolo Promemoria"
+                autocomplete="off"
+                id="titolo-todo"
+              />
+              <input
+                type="text"
+                placeholder="Descrizione promemoria"
+                autocomplete="off"
+                id="descrizione-todo"
+              />
+            </span>
+            <div class="chip">
+              <span id="inserisci">Inserisci</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--BOTTONE FINESTRA SX-->
+      <div class="chip" id="appari">
+        <span id="open">
+          <i class="fa-regular fa-window-maximize"></i>
+        </span>
+      </div>
+    </div>
+
+    <!--SCRIPT-->
+    <script src="app.js" defer></script>
+  </body>
+</html>

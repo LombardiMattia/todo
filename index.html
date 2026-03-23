@@ -18,6 +18,9 @@
     />
 
     <title>TODO LIST</title>
+
+        <!--SCRIPT-->
+        <script src="app.js" defer></script>
   </head>
   <body>
     <!--BOX GENERALE-->
@@ -42,7 +45,7 @@
 
         <h2>Filtri</h2>
         <div id="filter-list">
-          <div class="box" id="tutti">
+          <div class="box filter-active" id="tutti">
             <div class="box-sx"><i class="fa-solid fa-inbox"></i>TUTTI</div>
             <div class="box-dx" id="n-TUTTI">0</div>
           </div>
@@ -71,8 +74,8 @@
 
         <!--INTESTAZIONE-->
         <div id="intestazione">
-          <h1 id="filtro-selezionato">INTESTAZIONE FILTRO</h1>
-          <p id="Reseconto">Totali inseriti: 0</p>
+          <h1 id="filtro-selezionato"></h1>
+          <div id="resoconto">e</div>
         </div>
 
         <!--TODOS-->
@@ -113,7 +116,6 @@
       </div>
     </div>
 
-    <!--SCRIPT-->
-    <script src="app.js" defer></script>
+
   </body>
 </html>

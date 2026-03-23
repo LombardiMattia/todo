@@ -273,3 +273,8 @@ h1 {
 .circle-active i {
   font-size: 10px;
 }
+
+/*filtro attivato*/
+.filter-active {
+    border: 4px solid rgb(63, 63, 70);
+}
